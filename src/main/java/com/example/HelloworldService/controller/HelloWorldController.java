@@ -21,8 +21,6 @@ public class HelloWorldController {
         List<Person>  persons=new ArrayList<Person>();
         persons.add(person1);
         persons.add(person2);
-
-
         return new ResponseEntity<List<Person>>(persons, HttpStatus.OK);
     }
 
