@@ -8,6 +8,7 @@ public class HelloworldServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HelloworldServiceApplication.class, args);
+		System.out.println("Hello World Service");
 	}
 
 }
