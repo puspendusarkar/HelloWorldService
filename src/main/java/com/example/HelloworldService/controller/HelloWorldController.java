@@ -18,6 +18,7 @@ public class HelloWorldController {
     public ResponseEntity<List<Person>> getPerson(){
         Person person1=new Person(1,"Susanta");
         Person person2=new Person(2,"Sorav");
+        Person person3=new Person(3,"Sumit");
         List<Person>  persons=new ArrayList<Person>();
         persons.add(person1);
         persons.add(person2);
