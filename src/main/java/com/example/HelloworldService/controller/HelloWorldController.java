@@ -1,6 +1,8 @@
 package com.example.HelloworldService.controller;
 
 import com.example.HelloworldService.dto.Person;
+import com.example.HelloworldService.service.HelloworldService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -14,15 +16,13 @@ import java.util.List;
 @RestController
 @RequestMapping("/hellowolrd")
 public class HelloWorldController {
+    @Autowired
+    HelloworldService helloworldService;
     @GetMapping("/persons")
     public ResponseEntity<List<Person>> getPerson(){
-        Person person1=new Person(1,"Susanta");
-        Person person2=new Person(2,"Sorav");
-        Person person3=new Person(3,"Sumit");
-        List<Person>  persons=new ArrayList<Person>();
-        persons.add(person1);
-        persons.add(person2);
-        persons.add(person3);
+
+        List<Person>  persons=helloworldService.getAllPersons();
+
         return new ResponseEntity<List<Person>>(persons, HttpStatus.OK);
     }
 
