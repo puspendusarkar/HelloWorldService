@@ -7,11 +7,12 @@ phases:
   build:
     commands:
       - echo "Enterdd the build phase"
-      - mvn install
+      - mvn clean package
   post_build:
     commands:
       - echo "Enterred thr post build"
       - mv target/HelloWorldAPI.jar ./
 artifacts:
   files:
-    - deploy/**/*
+    - target/order-service.jar
+  discard-paths: yes
