@@ -11,8 +11,8 @@ phases:
   post_build:
     commands:
       - echo "Enterred thr post build"
-      - mv target/HelloWorldAPI.jar ./
+      #- mv target/HelloWorldAPI.jar ./
 artifacts:
   files:
-    - target/order-service.jar
+    - target/HelloWorldAPI.jar
   discard-paths: yes
