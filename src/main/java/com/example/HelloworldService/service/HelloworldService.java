@@ -10,10 +10,10 @@ import java.util.List;
 public class HelloworldService {
 
     public List<Person> getAllPersons(){
-        Person person1=new Person(1,"Susanta");
-        Person person2=new Person(2,"Sorav");
-        Person person3=new Person(3,"Sumit");
-        Person person4=new Person(4,"Amit");
+        Person person1=new Person(1,"Susanta Chaterjee");
+        Person person2=new Person(2,"Sorav Das");
+        Person person3=new Person(3,"Sumit Saha");
+        Person person4=new Person(4,"Amit Kumar");
         List<Person>  persons=new ArrayList<Person>();
         persons.add(person1);
         persons.add(person2);
