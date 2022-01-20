@@ -46,7 +46,7 @@
 		</plugins>
 		<finalName>HelloWorldAPI</finalName>
 	</build>
-	<!--
+
 			<repositories>
 			<repository>
 				<id>myMavenRepo.read</id>
@@ -60,5 +60,5 @@
 				<url>https://mymavenrepo.com/repo/Pjcz1c77OHM5YA0d0gNc/</url>
 			</repository>
 		</distributionManagement>
-	-->
+
 </project>
