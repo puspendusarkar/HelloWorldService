@@ -1,0 +1,18 @@
+#this file control the AWS code pipeline
+version: 0.1
+phases:
+  pre_build:
+    commands:
+      - echo "Eneterred the prebuild"
+  build:
+    commands:
+      - echo "Enterdd the build phase"
+      - mvn clean package
+  post_build:
+    commands:
+      - echo "Enterred thr post build"
+      #- mv target/HelloWorldAPI.jar ./
+artifacts:
+  files:
+    - target/HelloWorldAPI.jar
+  discard-paths: yes
