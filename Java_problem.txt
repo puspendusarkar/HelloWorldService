@@ -1,0 +1,16 @@
+// max profit from stock price array
+    //input-array of stock price -[10,4,6,8,7,9]
+    //output-5
+
+//find duplicate char in a string
+    //input -puspendu
+    //output-p,u
+
+//find nubber of occurence each char
+//input- puspendu
+//output- p->2, u->2, s->1, e->1,n->1,d->1
+
+
+//to the input , what all special char needs to be addedd to make it blanced string
+///input -{[{}
+//output -]}
